@@ -13,16 +13,17 @@
   
   .card > h2{
     font-size: 2rem;
-    color: deeppink;
+    border-left: 0.2rem solid deeppink;
   }
   
   .card > img{
     border-radius: 1rem;
   }
-  
-  .tag{
-    display: inline;
-    background-color: deeppink;
-    border-radius: 1rem;
+
+  .tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
-  
