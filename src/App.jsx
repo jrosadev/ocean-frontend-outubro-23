@@ -12,10 +12,13 @@ function App() {
     imagemUrl: 'https://static.wikia.nocookie.net/sailormoon/images/4/41/Minako_Aino_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/309?cb=20190906073411'
   }
 
+  const personagens = [personagem1, personagem2]
+
   return (
     <>
-      <Card item={personagem1} />
-      <Card item={personagem2} />
+      {personagens.map(function(personagem){
+        return <Card item={personagem} />
+      })}
     </>
 
   )
